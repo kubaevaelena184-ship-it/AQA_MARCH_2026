@@ -1,4 +1,4 @@
-package org.prog;
+package org.prog.session1;
 
 // TODO: print if i == j, where i = 10 and j = 20;
 // TODO: write if-else if i == j then print "OK" else - "NOT OK"
@@ -81,12 +81,12 @@ public class Main {
         int v3 = 4;
         int v4 = 5;
 
-        v2 = v2 + 1;
-
         if ((v1 % v2 == 1) && (v1 % v3 == 2)) {
             System.out.println("OK");
         } else {
             System.out.println("ERROR");
         }
+
+        System.out.println("CODE WORKS!!!");
     }
 }
