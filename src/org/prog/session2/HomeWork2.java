@@ -20,5 +20,22 @@ public class HomeWork2 {
                 "abcdedfg@x.com",
                 "abcdedfg@xzfgdasd.com"
         };
+        for (int i = 0; i < emails.length; i++){
+            String email = emails[i];
+
+            int atIndex = email.indexOf("@");
+            int doIndex = email.indexOf(".",atIndex);
+
+            if (email.indexOf("@") == email.lastIndexOf("@") && atIndex >= 3 &&
+                    doIndex != -1 && doIndex - atIndex >=4 ) {
+                System.out.println(email);
+            }
+
+
+        }
+
+
+
+
     }
 }
