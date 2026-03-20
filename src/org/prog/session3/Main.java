@@ -36,22 +36,22 @@ public class Main {
         System.out.println("============================================");
         System.out.println("============================================");
 
-//        for (int i = 1; i < ints.length; i++) {
-//            if (i == 0) {
-//                i++;
-//            }
-//
-//            if (ints[i] < ints[i - 1]) {
-//                int temp = ints[i];
-//                ints[i] = ints[i - 1];
-//                ints[i - 1] = temp;
-//                i = i - 2;
-//            }
-//
-//            if (i == ints.length - 1 && ints[i] >= ints[i - 1]){
-//                break;
-//            }
-//        }
+        for (int i = 1; i < ints.length; i++) {
+            if (i == 0) {
+                i++;
+            }
+
+            if (ints[i] < ints[i - 1]) {
+                int temp = ints[i];
+                ints[i] = ints[i - 1];
+                ints[i - 1] = temp;
+                i = i - 2;
+            }
+
+            if (i == ints.length - 1 && ints[i] >= ints[i - 1]){
+                break;
+            }
+        }
 
         boolean sorted = false;
         int index = 0;
